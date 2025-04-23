@@ -1,7 +1,7 @@
 import express from 'express';
 import router from './routes';
 import cors from 'cors';
-import { pool } from './database'; // importa a conexão
+import { pool } from './Database'; // importa a conexão
 
 const app = express();
 app.use(cors());
