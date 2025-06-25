@@ -16,7 +16,7 @@ app.listen(PORT, async () => {
   // Testa a conexão ao banco quando iniciar o servidor
   try {
     const result = await pool.query('SELECT NOW()');
-    console.log('Conectado ao banco de dados banco de dados!');
+    console.log('Conectado ao banco de dados!');
   } catch (error) {
     console.error('Erro ao conectar no banco de dados:', error);
   }

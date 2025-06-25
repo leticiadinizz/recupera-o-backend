@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { pool } from '../model/Database';
-import { Professor } from '../model/ProfessorModel';
+import { Professor } from '../model/Professor';
 
 export class ProfessorController {
   static async listar(req: Request, res: Response) {
