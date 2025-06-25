@@ -1,7 +1,7 @@
 import express from 'express';
 import router from './routes';
 import cors from 'cors';
-import { pool } from './Database'; // importa a conexão
+import { pool } from './model/Database'; // importa a conexão
 
 const app = express();
 app.use(cors());
@@ -16,8 +16,7 @@ app.listen(PORT, async () => {
   // Testa a conexão ao banco quando iniciar o servidor
   try {
     const result = await pool.query('SELECT NOW()');
-    console.log('Conexão com o banco bem-sucedida!');
-    console.log('Horário do PostgreSQL:', result.rows[0].now);
+    console.log('Conectado ao banco de dados banco de dados!');
   } catch (error) {
     console.error('Erro ao conectar no banco de dados:', error);
   }

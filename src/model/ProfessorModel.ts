@@ -1,4 +1,4 @@
-import { pool } from "../Database";
+import { pool } from "./Database";
 
 //Representa um registro de Professor no sistema.
 
